@@ -72,7 +72,7 @@ class ScorePoster:
             counter += 1
         self.postString += "\n\n\n\n *Please note: World and Open class corps are judged on the same sheets.* \n\n\n\n - [DCI.org permalink](" \
             +self.score_permalink +") \n\n - [RECAP]("+self.recap_permalink + ") \n\n - *THIS BOT IS IN BETA - send thoughts, concerns, suggestions " \
-            "to [/u/drum_code](http://www.reddit.com/u/drum_code)*\n\n - *Sorry about the posting hiatus- bot was undergoing heavy renovations*\n\n "
+            "to [/u/drum_code](http://www.reddit.com/u/drum_code)*\n\n - *Check out the source code @ [Github](https://github.com/themailman05/DCI_SCORES_BOT) *\n\n "
     def post(self):
         self.redditsession.submit(self.subreddit, "DCI RESULTS: " + self.title, text = self.postString)
         self.ListHandler.add(self.id)
