@@ -5,7 +5,7 @@ class SiteScraper:
     def __init__(self, listhandler):
         self.lh = listhandler
     def scrape(self):
-        soup = BeautifulSoup(urlopen('http://www.dci.org/scores'))
+        soup = BeautifulSoup(urlopen('http://www.dci.org/scores/'))
         results = soup.findAll('option')
         results_tags = []
         oldshows = self.lh.currentshowlist
