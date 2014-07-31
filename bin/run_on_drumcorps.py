@@ -20,7 +20,7 @@ redditpword = raw_input('Enter reddit password: ')
 while True:
     newshows = sp.scrape()
     if len(newshows) > 0:
-        print "Found " + len(newshows) + " new shows in most recent query."
+        print "Found " + str(len(newshows)) + " new shows in most recent query."
         for show in newshows:
             print "Creating post for " + show + "\n"
             sh = ScoreUtils.ScorePuller(show)
@@ -28,6 +28,6 @@ while True:
             scorepost.populatepost()
             scorepost.post()
             time.sleep(3)
-    time.sleep(20)
+    time.sleep(60)
     
         
