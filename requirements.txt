@@ -1,0 +1,5 @@
+praw >= 2.1.17
+BeautifulSoup >= 3.2.1
+cerealizer
+
+
