@@ -26,6 +26,4 @@ while True:
             scorepost.populatepost()
             scorepost.post()
             time.sleep(3)
-    time.sleep(20)
-    
-        
+    time.sleep(20) 
